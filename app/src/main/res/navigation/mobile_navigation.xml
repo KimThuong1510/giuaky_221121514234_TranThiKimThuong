@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_day1_layout">
+
+    <fragment
+        android:id="@+id/nav_day1_layout"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day1_Layout.LayoutFragment"
+        android:label="Layout"
+        tools:layout="@layout/fragment_layout" />
+
+    <fragment
+        android:id="@+id/nav_day1_linearlayout"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day1_LinearLayout.LinearLayoutFragment"
+        android:label="Linear Layout"
+        tools:layout="@layout/fragment_linear_layout" />
+
+    <fragment
+        android:id="@+id/nav_day2_activity_login"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day2_Activity.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_day2_activity_login_to_nav_day2_activity_profile"
+            app:destination="@id/nav_day2_activity_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_day2_activity_profile"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day2_Activity.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_day2_activity_profile_to_nav_day2_activity_edit_user"
+            app:destination="@id/nav_day2_activity_edit_user" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_day2_activity_edit_user"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day2_Activity.EditUserFragment"
+        android:label="Edit User"
+        tools:layout="@layout/fragment_edit_user" />
+    <fragment
+        android:id="@+id/nav_day2_listview"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day2_ListView.ListViewFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_listview" />
+    <fragment
+        android:id="@+id/nav_day2_listview_advanced"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day2_ListView_Advanced.ListViewAdvancedFragment"
+        android:label="List View"
+        tools:layout="@layout/fragment_listview_advanced" />
+    <fragment
+        android:id="@+id/nav_day3_network_basic"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day3_Network.BasicFragment"
+        android:label="Network Basic"
+        tools:layout="@layout/fragment_network_basic" />
+    <fragment
+        android:id="@+id/nav_day3_network_listNews"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day3_Network.ListNewsFragment"
+        android:label="Network ListNews"
+        tools:layout="@layout/fragment_network_listnews" />
+    <fragment
+        android:id="@+id/nav_day3_network_weather"
+        android:name="org.o7planning.giuaky_221121514234.ui.Day3_Network.WeatherFragment"
+        android:label="Network Weather"
+        tools:layout="@layout/fragment_network_weather" />
+</navigation>
